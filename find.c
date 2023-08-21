@@ -75,7 +75,6 @@ void *list_folder_contents(void *arg)
 	
 	while (head)
 	{  
-		sleep(1);
 		dir = opendir(head->name);
 		if (dir) {
 			memset(parent, 0, FNLEN);
